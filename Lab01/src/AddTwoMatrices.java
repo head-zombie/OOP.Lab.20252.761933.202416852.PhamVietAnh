@@ -1,6 +1,8 @@
+package Lab01.src;
+
 import java.util.Scanner;
 
-public class Lab66 {
+public class AddTwoMatrices {
     public static void main(String[] args) {
         int MAX = 100;
         int[][] m1 = new int[MAX][MAX];
