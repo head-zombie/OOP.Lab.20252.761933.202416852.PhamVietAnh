@@ -1,5 +1,4 @@
-// 6.1
-package oop_lab.lab1;
+package Lab01;
 
 import javax.swing.JOptionPane;
 

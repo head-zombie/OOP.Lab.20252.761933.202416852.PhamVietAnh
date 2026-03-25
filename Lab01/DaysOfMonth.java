@@ -8,12 +8,33 @@ public class DaysOfMonth {
 
         while (true) {
             System.out.print("Nhap thang: ");
-            int month = sc.nextInt();
+            String month = sc.nextInt();
             System.out.print("Nhap nam: ");
             int year = sc.nextInt();
-            if (month >= 1 && month <= 12 && year >= 0)
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("1"))
                 break;
-            System.out.println("Nam hoac thang khong hop le !");
+            if (month.equals("February") && month.equals("Feb") && month.equals("Feb.") && month.equals("2"))
+                break;
+            if (month.equals("March") && month.equals("Mar") && month.equals("Mar.") && month.equals("3"))
+                break;
+            if (month.equals("April") && month.equals("Apr") && month.equals("Jan.") && month.equals("4"))
+                break;
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("5"))
+                break;
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("6"))
+                break;
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("7"))
+                break;
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("8"))
+                break;
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("9"))
+                break;
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("10"))
+                break;
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("11"))
+                break;
+            if (month.equals("January") && month.equals("Jan") && month.equals("Jan.") && month.equals("12"))
+                break;
         }
 
     }

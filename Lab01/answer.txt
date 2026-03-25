@@ -1,0 +1,12 @@
+2.2.1 done
+2.2.2 done
+2.2.3 done
+2.2.4 done
+2.2.5 done
+2.2.6 equation
+6.1 done
+6.2 done
+6.3 done
+6.4 if else
+6.5 done
+6.6 done

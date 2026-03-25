@@ -1,4 +1,4 @@
-package oop_lab.lab1;
+package Lab01.src;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class InputFromKeyboard {
 
         System.out.println("What 's your name ?");
         String strName = keyboard.nextLine();
-        System.out.println("How old aare you ?");
+        System.out.println("How old are you ?");
         int iAge = keyboard.nextInt();
         System.out.println("How tall are you (m) ?");
         double dHeight = keyboard.nextDouble();
