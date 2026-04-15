@@ -1,0 +1,5 @@
+Không, Java cho phép tạo nhiều hàm khởi tạo (constructor)
+nhưng chúng phải khác nhau về tham số truyền vào 
+(số lượng, kiểu dữ liệu hoặc thứ tự các tham số). Nếu viết
+DigitalVideoDisc("Thầy Bùi Trọng Đức đẹp trai"); Java sẽ không thể phân biệt bạn đang 
+muốn truyền vào title hay category (do cùng kiểu String)
