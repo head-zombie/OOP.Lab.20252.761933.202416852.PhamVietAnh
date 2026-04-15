@@ -1,0 +1,16 @@
+package AimsProject;
+
+public class TestDigitalVideoDisc {
+    public static void main(String[] args) {
+
+        DigitalVideoDisc dvd1 = new DigitalVideoDisc("Romance", "Cinderella", 15.99f);
+        DigitalVideoDisc dvd2 = new DigitalVideoDisc("Comedy", "Tom and Jerry", 12.99f);
+        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Drama", "Attack on titan", 18.49f);
+
+        System.out.println("DVD 1 ID: " + dvd1.getId() + ", Title: " + dvd1.getTitle());
+        System.out.println("DVD 2 ID: " + dvd2.getId() + ", Title: " + dvd2.getTitle());
+        System.out.println("DVD 3 ID: " + dvd3.getId() + ", Title: " + dvd3.getTitle());
+
+        System.out.println("Total DVDs created: " + DigitalVideoDisc.getNbDigitalVideoDiscs());
+    }
+}
