@@ -35,7 +35,7 @@ public class DigitalVideoDisc {
     }
 
     public int getId() {
-        return this.id;
+        return id;
     }
 
     public static int getNbDigitalVideoDiscs() {
@@ -48,6 +48,8 @@ public class DigitalVideoDisc {
         this.director = director;
         this.length = length;
         this.cost = cost;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public String getTitle() {
@@ -90,4 +92,11 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
+    @Override
+    public String toString() {
+        return title + " - " + (category != null ? category : "Unknown") +
+                " - " + (director != null ? director : "N/A") +
+                " - " + (length > 0 ? length + " mins" : "Unknown length") +
+                ": " + cost + " USD";
+    }
 }
