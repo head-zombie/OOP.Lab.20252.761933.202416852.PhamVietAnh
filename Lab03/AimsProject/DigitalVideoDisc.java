@@ -99,4 +99,9 @@ public class DigitalVideoDisc {
                 " - " + (length > 0 ? length + " mins" : "Unknown length") +
                 ": " + cost + " USD";
     }
+
+    public boolean isMatch(String title) {
+        return this.title.equals(title);
+    }
+
 }
