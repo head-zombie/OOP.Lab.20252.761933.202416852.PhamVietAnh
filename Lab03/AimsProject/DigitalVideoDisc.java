@@ -42,7 +42,7 @@ public class DigitalVideoDisc {
         return nbDigitalVideoDiscs;
     }
 
-    public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+    public DigitalVideoDisc(String category, String title, String director, int length, float cost) {
         this.title = title;
         this.category = category;
         this.director = director;
