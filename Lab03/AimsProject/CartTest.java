@@ -1,0 +1,32 @@
+package AimsProject;
+
+public class CartTest {
+    public static void main(String[] args) {
+        Cart cart = new Cart();
+
+        DigitalVideoDisc dvd1 = new DigitalVideoDisc("Attack on titan", "Animation", "Hajime Isayama", 87, 19.95f);
+        DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars", "Science Fiction", "George Lucas", 124, 24.95f);
+        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Animation", "Naruto", 18.99f);
+
+        cart.addDigitalVideoDisc(dvd1);
+        cart.addDigitalVideoDisc(dvd2);
+        cart.addDigitalVideoDisc(dvd3);
+
+        cart.print();
+
+        System.out.println("\nSearching for DVD with ID 1:");
+        cart.searchById(1);
+
+        System.out.println("\nSearching for DVD with ID 3:");
+        cart.searchById(3);
+
+        System.out.println("\nSearching for DVD with ID 5:");
+        cart.searchById(5);
+
+        System.out.println("\nSearching for DVD with title 'Aladdin':");
+        cart.searchByTitle("Aladdin");
+
+        System.out.println("\nSearching for DVD with title 'Attack on titan':");
+        cart.searchByTitle("Attack on titan");
+    }
+}
