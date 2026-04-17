@@ -1,0 +1,26 @@
+- Do câu lệnh điều kiện option == JOptionPane.YES_OPTION ? "Yes" : "No" kiểm 
+    tra nếu option là "Yes" thì in ra "Yes", nếu không thì in ra "No", nên khi người 
+    dùng chọn "Cancel" thì kết quả sẽ giống như chọn "No"
+- Để chỉ hiển thị 2 nút "Yes" và "No", ta có thể sử dụng hằng số YES_NO_OPTION
+    int option = JOptionPane.showConfirmDialog(null,  "Do you want to change to 
+    the first class ticket?", "Confirmation", JOptionPane.YES_NO_OPTION);
+- Để hiển thị "I do" và "I don't", ta có thể sử dụng phương thức showOptionDialog
+    import javax.swing.JOptionPane;
+    public class ChoosingOption {
+        public static void main(String[] args) {
+            Object[] options = {"I do", "I don't"};
+            int choice = JOptionPane.showOptionDialog(null,
+                    "Do you want to change to the first class ticket?",
+                    "Ticket Option",
+                    JOptionPane.YES_NO_OPTION,
+                    JOptionPane.QUESTION_MESSAGE,
+                    null,
+                    options,
+                    options[0]);
+            String response = (choice == JOptionPane.YES_OPTION) ? "I do" : "I don't";
+            JOptionPane.showMessageDialog(null, "You've chosen: " + response);
+            System.exit(0);
+        }
+    }
+
+
