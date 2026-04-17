@@ -1,5 +1,16 @@
-Không, Java cho phép tạo nhiều hàm khởi tạo (constructor)
-nhưng chúng phải khác nhau về tham số truyền vào 
-(số lượng, kiểu dữ liệu hoặc thứ tự các tham số). Nếu viết
-DigitalVideoDisc("Thầy Bùi Trọng Đức đẹp trai"); Java sẽ không thể phân biệt bạn đang 
-muốn truyền vào title hay category (do cùng kiểu String)
+Question:
+Q: Is JAVA a Pass by Value or a Pass by Reference programming language?
+
+Ans: Java là ngôn ngữ lập trình truyền tham trị, có nghĩa là khi truyền tham số vào 1 hàm, hàm đó tạo
+bản sao của những tham số đó và làm việc trên đó, ko ảnh hưởng đến các biến gốc ngoài hàm.
+
+Q: After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two
+objects still remain?
+
+Ans: Vì khi đó, việc swap chỉ tạo ra 2 bản sao của jungleDVD và cinderellaDVD rồi làm việc trên đó.
+Không ảnh hưởng đến các object gốc.
+
+Q: After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is
+the title of the JungleDVD changed?
+
+Ans: Vì lúc đó hàm setTitle được gọi, trỏ thẳng tới địa chỉ của object gốc.
