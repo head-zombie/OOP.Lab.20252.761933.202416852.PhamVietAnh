@@ -15,7 +15,7 @@ public class NoGarbage {
             e.printStackTrace();
         }
         startTime = System.currentTimeMillis();
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(); // Using StringBuilder
         for (byte b : inputBytes) {
             sb.append((char) b);
         }
